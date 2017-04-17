@@ -8,7 +8,7 @@ class ResumesController < ApplicationController
 
   def create
     @job = Job.find(params[:job_id])
-    @resume = @resume.new(resume_params)
+    @resume = Resume.new(resume_params)
     @resume.job = @job
     @resume.user = current_user
     if @resume.save

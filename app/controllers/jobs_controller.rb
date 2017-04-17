@@ -27,7 +27,7 @@ class JobsController < ApplicationController
   def show
     @job = Job.find(params[:id])
 
-    if jod.is_hidden
+    if @job.is_hidden
       flash[:warning] = "此岗位不存在"
       redirect_to root_path
     end
