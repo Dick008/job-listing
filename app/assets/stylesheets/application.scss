@@ -113,9 +113,17 @@
 
 // -----foot-----
 .foot {
-  font-size: 20px;
+  font-size: 23px;
   line-height: 24px;
   text-align: center;
   color: black;
-  padding: 0 auto;
+  margin: 15px 0 0 0;
+}
+
+.foot-2 {
+  font-size: 18px;
+  text-align: center;
+  padding: 0;
+  margin-top: -15px;
+  color: #212121;
 }
